@@ -1,0 +1,39 @@
+.home {
+   width: 100%;
+   height: max-content;
+   background: center/cover url("../../assents/home.jpg");
+   padding-top: 50px;
+}
+.containers{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.homeRight,.homeLeft{
+   width: 50%;
+   height: 100%;
+}
+
+.homeLeft h1 {
+   font-family: 'Tilt Prism', cursive;
+   text-shadow: 3px 3px 6px dodgerblue;
+   text-transform: capitalize;
+   margin-left: 50px;
+}
+@media screen and (max-width:1100px) {
+   .home h1{
+      font-size: 5vw;
+   }
+}
+/* 
+@media screen and (max-width:900px) {
+   .home{
+      height:65vh;
+   }
+} */
+@media screen and (max-width:700px) {
+   .home{
+      padding-top: 70px;
+   }
+}

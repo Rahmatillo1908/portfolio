@@ -1,0 +1,105 @@
+.Navbar {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 50px;
+   position: fixed;
+   top: 0px;
+   transition: 1s;
+   z-index: 10;
+}
+
+.Navbars {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 50px;
+   position: fixed;
+   top: 0px;
+   transition: 1s;
+   z-index: 10;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbarLogo img {
+   width: 300px;
+}
+
+.navbarMenu {
+   display: flex;
+   gap: 30px;
+   font-size: 1.3rem;
+}
+
+.navbarMenu a {
+   transition: 0.5s;
+}
+
+.navbarMenu a:hover {
+   transform: scale(1.2);
+   color: slategrey;
+}
+
+.navbarLogo2 {
+   display: flex;
+   height: 100%;
+   align-items: center;
+}
+
+.navbarLogo2 img {
+   width: 100px;
+   object-fit: contain;
+   height: 90%;
+}
+
+.navbarMedia {
+   display: none;
+}
+
+@media screen and (max-width:1024px) {
+   .Navbar {
+      display: block;
+      background: rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      transition: 1s;
+   }
+
+   .Navbars {
+      display: block;
+      background: rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+      transition: 1s;
+   }
+
+   .navbarLogo img {
+      width: 80%;
+      object-fit: contain;
+      height: 70px;
+   }
+
+   .navbarMedia {
+      display: block;
+      position: absolute;
+      top: 20px;
+      font-size: 30px;
+      right: 20px;
+      transition: 1s;
+      text-align: end;
+      width: 20%;
+   }
+
+   .navbarMenu {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .navbarLogo2 {
+      display: flex;
+      justify-content: space-around;
+   }
+
+}
